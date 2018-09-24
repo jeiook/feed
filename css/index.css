@@ -1,0 +1,112 @@
+/********MOBILE FIRST********/
+/* ---TABLE OF CONTENTS---
+	- globals
+	- flex containers
+	- top page items
+	- main items
+*/
+
+
+/*beg of globals*/
+* {
+	box-sizing: border-box;
+}
+body {
+	margin: 0;
+}
+/*end of globals*/
+
+
+
+/*beg of flex containers*/
+.flex-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+/*end of flex containers*/
+
+
+
+/* beg of top page items*/
+#top-hint {
+	text-align: center;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 13px;
+	color: white;
+	background: darkgreen;
+	width: 100vw;
+	height: 65px;
+	padding: 15px;
+}
+
+#nav-bar {
+	height: 70px;
+	width: 100vw;
+	background: white;
+}
+
+.nav > * {
+	height: 40%;
+	width: auto;
+}
+
+.space-filler {
+	height: 100%;
+	width: 5%;
+}
+
+#shopping-bag {
+	height: 100%;
+}
+
+#cart-count {
+	position: absolute;
+	z-index: 10;
+	right: 7.5%;
+	top: 17%;
+}
+/* end of top page items*/
+
+
+
+/*beg of main items*/
+.main-content {
+	width: 100vw;
+	height: 390px;
+	background: url("https://www.feedprojects.com/sites/default/files/banner/mobile/Monogram-shop_m.jpg"); 
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+#product-intro {
+	width: 100vw;
+	height: 130px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-family: "Meddon", cursive;
+	text-align: center;
+}
+
+.model-image {
+	width: 100vw;
+	height: 200px;
+	background: url("https://www.feedprojects.com/sites/default/files/styles/larger/public/home/T1_Field%20Messenger.jpg?itok=YgJXgk_i");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.product-description {
+	width: 100vw;
+	height: 500px;
+}
+
+.product-image {
+	width: 100vw;
+	height: 300px;
+	background: url("https://www.feedprojects.com/sites/default/files/styles/product_listing/public/products/listing/Army-green_alt-monogram_1.jpg?itok=HrGFkSGQ");
+}
+/*end of main items*/
