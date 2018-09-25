@@ -11,8 +11,10 @@
 * {
 	box-sizing: border-box;
 }
+
 body {
 	margin: 0;
+	overflow-x: hidden;
 }
 /*end of globals*/
 
@@ -33,12 +35,12 @@ body {
 #top-hint {
 	text-align: center;
 	font-weight: bold;
-	font-family: Arial;
-	font-size: 13px;
+	font-family: Roboto;
+	font-size: 14px;
 	color: white;
 	background: darkgreen;
 	width: 100vw;
-	height: 65px;
+	height: 20vw;
 	padding: 15px;
 }
 
@@ -55,18 +57,26 @@ body {
 
 .space-filler {
 	height: 100%;
-	width: 5%;
+	width: 10%;
 }
 
 #shopping-bag {
-	height: 100%;
+	width: 30px;
+	height: 30px;
+	background: url("http://icons.iconarchive.com/icons/icons8/ios7/256/Ecommerce-Shopping-Bag-icon.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #cart-count {
-	position: absolute;
-	z-index: 10;
-	right: 7.5%;
-	top: 17%;
+	position: relative;
+	width: 13px;
+	height: 13px;
+	margin: 50% auto;
+	font-family: Arial;
+	font-size: 13px;
+	text-align: center;
 }
 /* end of top page items*/
 
@@ -75,7 +85,7 @@ body {
 /*beg of main items*/
 .main-content {
 	width: 100vw;
-	height: 390px;
+	height: 120vw;
 	background: url("https://www.feedprojects.com/sites/default/files/banner/mobile/Monogram-shop_m.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -83,10 +93,9 @@ body {
 
 #product-intro {
 	width: 100vw;
-	height: 130px;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	font-size: 30px;
+	height: 100px;
+	margin: 45px auto;
+	font-size: 28px;
 	font-family: "Meddon", cursive;
 	text-align: center;
 }
@@ -99,14 +108,33 @@ body {
 	background-size: cover;
 }
 
-.product-description {
-	width: 100vw;
-	height: 500px;
-}
-
 .product-image {
 	width: 100vw;
 	height: 300px;
 	background: url("https://www.feedprojects.com/sites/default/files/styles/product_listing/public/products/listing/Army-green_alt-monogram_1.jpg?itok=HrGFkSGQ");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	margin: 20px 0;
+}
+
+.product-description {
+	width: 100vw;
+	height: 100px;
+}
+
+.product-description > * {
+	text-align: center;
+	font-family: "Roboto", sans-serif;
+	margin-bottom: 10px;
+}
+
+.donation-description {
+	font-size: 13px;
+	font-weight: bold;
 }
 /*end of main items*/
+
+/*@media only screen and (min-width: 360px) {
+
+}*/
