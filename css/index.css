@@ -16,6 +16,11 @@ body {
 	margin: 0;
 	overflow-x: hidden;
 }
+
+a {
+	text-decoration: none;
+	color: black;
+}
 /*end of globals*/
 
 
@@ -34,14 +39,17 @@ body {
 /* beg of top page items*/
 #top-hint {
 	text-align: center;
+	text-transform: uppercase;
 	font-weight: bold;
+	font-kerning: normal;
 	font-family: Roboto;
 	font-size: 14px;
 	color: white;
-	background: darkgreen;
+	background: url(http://www.feedprojects.com/sites/all/themes/feed/born/images/textures/trail-waxed-canvas-texture.jpg);
 	width: 100vw;
-	height: 20vw;
-	padding: 15px;
+	height: 45px;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 #nav-bar {
@@ -58,6 +66,15 @@ body {
 .space-filler {
 	height: 100%;
 	width: 10%;
+}
+
+#real-menu {
+	display: none;
+	list-style-type: none;
+}
+
+#special-menu-item {
+	color: rgb(204, 173, 0);
 }
 
 #shopping-bag {
@@ -83,12 +100,36 @@ body {
 
 
 /*beg of main items*/
-.main-content {
+.main-container {
 	width: 100vw;
-	height: 120vw;
-	background: url("https://www.feedprojects.com/sites/default/files/banner/mobile/Monogram-shop_m.jpg"); 
+	height: calc(100vw/1005*471);
+}
+
+.main-content-img {
+	width: 100vw;
+	height: 140vw;
+	background: url("http://www.feedprojects.com/sites/default/files/Leather-FEED-1-banner_mobile.jpg"); 
 	background-repeat: no-repeat;
 	background-size: cover;
+}
+
+.main-content-video {
+	display: none;
+	width: 100vw;
+	height: auto;
+
+}
+
+.main-message {
+	z-index: 10;
+	background: url(http://www.feedprojects.com/sites/default/files/Overlay_FEED-1.png);
+	background-position: center;
+	background-size: contain;
+	background-repeat: no-repeat;
+	width: 49.76vw;
+	height: calc(49.76vw/1000*468.75);
+	position: absolute;
+	margin: 15vw 25vw;
 }
 
 #product-intro {
@@ -103,7 +144,7 @@ body {
 .model-image {
 	width: 100vw;
 	height: 200px;
-	background: url("https://www.feedprojects.com/sites/default/files/styles/larger/public/home/T1_Field%20Messenger.jpg?itok=YgJXgk_i");
+	background: url("https://www.feedprojects.com/sites/default/files/styles/larger/public/home/T1_leather%20feed%201_2.jpg?itok=yDde-rSl");
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -111,7 +152,7 @@ body {
 .product-image {
 	width: 100vw;
 	height: 300px;
-	background: url("https://www.feedprojects.com/sites/default/files/styles/product_listing/public/products/listing/Army-green_alt-monogram_1.jpg?itok=HrGFkSGQ");
+	background: url("https://www.feedprojects.com/sites/default/files/styles/product_listing/public/products/listing/Taupe_1.jpg?itok=Tl-kQB3E");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -134,7 +175,49 @@ body {
 	font-weight: bold;
 }
 /*end of main items*/
+@media only screen and (max-width: 389px) {
+	#top-hint {
+		height: 60px;
+	}
+}
 
-/*@media only screen and (min-width: 360px) {
+@media only screen and (min-width: 390px) {
+	#top-hint {
+		height: 45px;
+	}
+}
 
-}*/
+@media only screen and (min-width: 768px) {
+	#nav-bar {
+		height: 80px;
+	}
+}
+
+@media only screen and (min-width: 980px) {
+	#menu {
+		display: none
+	}
+	.flex-nav {
+		justify-content: space-between;
+	}
+	#space-filler {
+		display: none;
+	}
+	#real-menu {
+		display: block;
+	}
+	#real-menu > li {
+		display: inline-block;
+		font-family: 'Roboto', sans-serif;
+		font-size: 14px;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 5px;
+	}
+	.main-content-img {
+		display: none;
+	}
+	.main-content-video {
+		display: block;
+	}
+}
